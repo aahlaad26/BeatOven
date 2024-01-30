@@ -60,14 +60,17 @@ struct IntrotextEditorView: View {
                           .overlay(
                             VStack(alignment: .leading) {
                                 TextField("Enter your text here...", text: $userText)
-                        .font(.system(size: 25, weight: .light))
-                        .offset(x:10,y:-170)
+                                    .frame(width: 300, height: 400)
+                        .font(.system(size: 19, weight: .light))
+                        .foregroundColor(.black)
+                        
+                        .offset(x:10,y:-169)
 
                         Text("\(userText.count)/1000 words")
                                     .font(.headline)
                                                         .foregroundColor(userText.count > 900 ? .red : .gray)
                                                         .padding(.bottom)
-                                                        .offset(x:200,y:150)
+                                                        .offset(x:200)
                                                 }
                           )
                         

@@ -6,9 +6,11 @@
 //
 
 import SwiftUI
-
+import AVKit
 struct NotableWorksAddView: View {
     @State private var userText = ""
+    @State private var selectedFile = false
+    @State private  var mediaURL: URL?
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         NavigationView{
@@ -61,7 +63,8 @@ struct NotableWorksAddView: View {
                           .overlay(
                             VStack(alignment: .leading) {
                                 TextField("Enter your text here...", text: $userText)
-                        .font(.system(size: 19, weight: .light))
+                        .font(.system(size: 19))
+                        .foregroundColor(.black)
                         .offset(x:10,y:-10)
                         
                                 Text("\(userText.count)/1000 words")
@@ -72,8 +75,46 @@ struct NotableWorksAddView: View {
                                                         }
                                   )
                         
-                        Image("file-upload-icon")
-                            .offset(y:-140)
+                        
+                            
+                        VStack {
+                            // Button with an image that opens fileImporter when clicked
+                            Button(action: {
+                                openFileImporter()
+                            }) {
+                                if let mediaURL = mediaURL {
+                                    if mediaURL.pathExtension.lowercased() == "mov" || mediaURL.pathExtension.lowercased() == "mp4" {
+                                        VideoPlayer(player: AVPlayer(url: mediaURL))
+                                            .frame(width: 150, height: 200)
+                                    } else {
+                                        Image(uiImage: UIImage(contentsOfFile: mediaURL.path) ?? UIImage(systemName: "photo")!)
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 150, height: 200)
+                                    }
+                                } else {
+                                    Image( "file-upload-icon")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 150, height: 200)
+                                }
+                            }
+                        }
+                        .fileImporter(isPresented: $selectedFile, allowedContentTypes: [.image, .movie]) { result in
+                            // Handle the selected file
+                            do {
+                                let fileURL = try result.get()
+                                print("Selected File: \(fileURL.path)")
+
+                                // Set the mediaURL to display the selected image or video
+                                mediaURL = fileURL
+                            } catch {
+                                // Handle any errors
+                                print("Error reading the selected file: \(error.localizedDescription)")
+                            }
+                            
+                        }
+                        .offset(y:-140)
                         //thin line between
                         Rectangle()
                           .foregroundColor(.clear)
@@ -101,6 +142,10 @@ struct NotableWorksAddView: View {
             }.ignoresSafeArea()
         }
     }
+    func openFileImporter() {
+        selectedFile = true
+    }
+
 }
 
 #Preview {
