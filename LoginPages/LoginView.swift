@@ -13,7 +13,7 @@
 
 
 import SwiftUI
-
+import Firebase
 struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
@@ -116,7 +116,18 @@ struct LoginView: View {
                             .padding(.trailing, 16)
                         
                         Button(action: {
-                            // Action for Sign Up button
+                            if !email.isEmpty,!password.isEmpty{
+                                Auth.auth().signIn(withEmail: email, password: password){
+                                    authResult, error in
+                                    if let error = error{
+                                        print("error in \(error.localizedDescription)")
+                                    }
+                                    else{
+                                        print("login sucessful")
+                                    }
+                                }
+                                
+                            }
                         }) {
                             Text("Sign In")
                                 .foregroundColor(.white)
@@ -158,8 +169,8 @@ struct LoginView: View {
                         .tracking(0.32)
                         .lineSpacing(19.50)
                         .foregroundColor(Color(hue: 0.692, saturation: 0.956, brightness: 0.66))
-                        .padding(.top, UIScreen.main.bounds.height * 0.55 / 2 + 490)
-                }
+                        
+                }.offset(y:360)
             }
         }
     }

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import Firebase
 struct FullSignUpView: View {
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     @State private var email: String = ""
@@ -115,15 +115,29 @@ struct FullSignUpView: View {
                             .foregroundColor(.white)
                             .offset(x: UIScreen.main.bounds.width / 2-195, y: UIScreen.main.bounds.height * 0.55 / 2 - 570)
 
-                        NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)) {
+                        
+                        Button(action: {
+                            if !email.isEmpty,
+                               !password.isEmpty,
+                               !username.isEmpty{
+                                Auth.auth().createUser(withEmail: email, password: password){
+                                    authResult , error in
+                                    if let error = error{
+                                        print("ERror in \(error.localizedDescription)")
+                                    }
+                                    else{
+                                        print("Sign up successful")
+                                    }
+                                }
+                            }
+                        }) {
                             Text("Create Account")
                                 .foregroundColor(.white)
                                 .padding()
                                 .background(Color("buttoncolor")) // Set your desired button color
                                 .cornerRadius(8)
-                                .padding(.top, 90) // Add additional top padding for spacing
                         }
-                        
+                        .offset(y:40)
 
                         Spacer()
                     }
