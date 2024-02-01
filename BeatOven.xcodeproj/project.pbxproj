@@ -17,6 +17,7 @@
 		0F8621502B6AD3EC003FE29C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0F86214F2B6AD3EC003FE29C /* FirebaseFirestoreSwift */; };
 		0F8621522B6AD3EC003FE29C /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8621512B6AD3EC003FE29C /* FirebaseMLModelDownloader */; };
 		0F8621542B6AD3EC003FE29C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8621532B6AD3EC003FE29C /* FirebaseStorage */; };
+		0F8621702B6B6C8A003FE29C /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86216F2B6B6C89003FE29C /* LandingPage.swift */; };
 		0FD296982B68AFAB004C7055 /* BeatOvenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD296972B68AFAB004C7055 /* BeatOvenApp.swift */; };
 		0FD2969A2B68AFAB004C7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD296992B68AFAB004C7055 /* ContentView.swift */; };
 		0FD2969C2B68AFAC004C7055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD2969B2B68AFAC004C7055 /* Assets.xcassets */; };
@@ -67,6 +68,7 @@
 
 /* Begin PBXFileReference section */
 		0F8621402B6AD20D003FE29C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0F86216F2B6B6C89003FE29C /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
 		0FD296942B68AFAB004C7055 /* BeatOven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatOven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD296972B68AFAB004C7055 /* BeatOvenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatOvenApp.swift; sourceTree = "<group>"; };
 		0FD296992B68AFAB004C7055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			children = (
 				0FD296972B68AFAB004C7055 /* BeatOvenApp.swift */,
 				0FD296992B68AFAB004C7055 /* ContentView.swift */,
+				0F86216F2B6B6C89003FE29C /* LandingPage.swift */,
 				0FD2969B2B68AFAC004C7055 /* Assets.xcassets */,
 				0FD2969D2B68AFAC004C7055 /* Preview Content */,
 			);
@@ -404,6 +407,7 @@
 				0FD296EC2B68BAF2004C7055 /* GroupChatView.swift in Sources */,
 				0FD296D52B68B80D004C7055 /* TrackLibView.swift in Sources */,
 				0FD296CB2B68B376004C7055 /* ColabView.swift in Sources */,
+				0F8621702B6B6C8A003FE29C /* LandingPage.swift in Sources */,
 				0FD296E82B68BA9D004C7055 /* NotableWorksAddView.swift in Sources */,
 				0FD296982B68AFAB004C7055 /* BeatOvenApp.swift in Sources */,
 				0FD296CD2B68B420004C7055 /* DMChatView.swift in Sources */,

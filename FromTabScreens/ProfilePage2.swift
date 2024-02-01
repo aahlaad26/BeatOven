@@ -81,7 +81,7 @@ struct ProfilePage2: View {
                                         .foregroundColor(.clear)
                             //PortfolioView()
                                 NavigationLink(destination:
-                                                ProfilePage()) {
+                                                PortfolioView()) {
                                     Image(systemName: "gearshape")
                                         .resizable()
                                         .frame(width: 28,height: 28)
