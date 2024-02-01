@@ -18,6 +18,15 @@
 		0F8621522B6AD3EC003FE29C /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8621512B6AD3EC003FE29C /* FirebaseMLModelDownloader */; };
 		0F8621542B6AD3EC003FE29C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 0F8621532B6AD3EC003FE29C /* FirebaseStorage */; };
 		0F8621702B6B6C8A003FE29C /* LandingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86216F2B6B6C89003FE29C /* LandingPage.swift */; };
+		0F86217B2B6B7436003FE29C /* SFPRODISPLAYBOLD.OTF in Resources */ = {isa = PBXBuildFile; fileRef = 0F8621792B6B7380003FE29C /* SFPRODISPLAYBOLD.OTF */; };
+		0F86217C2B6B743B003FE29C /* HoltwoodOneSC-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8621782B6B737E003FE29C /* HoltwoodOneSC-Regular.ttf */; };
+		0F86217D2B6B743E003FE29C /* Condiment-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F8621772B6B737C003FE29C /* Condiment-Regular.ttf */; };
+		0F8621802B6B7637003FE29C /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F86217F2B6B7637003FE29C /* SplashScreenView.swift */; };
+		0F8621822B6B7651003FE29C /* StartSplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8621812B6B7651003FE29C /* StartSplashScreen.swift */; };
+		0F8621842B6B7678003FE29C /* Screen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8621832B6B7678003FE29C /* Screen1.swift */; };
+		0F8621862B6B76A0003FE29C /* Screen2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8621852B6B76A0003FE29C /* Screen2.swift */; };
+		0F8621882B6B76BF003FE29C /* Screen3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8621872B6B76BF003FE29C /* Screen3.swift */; };
+		0F86218A2B6B76DA003FE29C /* Screen4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F8621892B6B76DA003FE29C /* Screen4.swift */; };
 		0FD296982B68AFAB004C7055 /* BeatOvenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD296972B68AFAB004C7055 /* BeatOvenApp.swift */; };
 		0FD2969A2B68AFAB004C7055 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FD296992B68AFAB004C7055 /* ContentView.swift */; };
 		0FD2969C2B68AFAC004C7055 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FD2969B2B68AFAC004C7055 /* Assets.xcassets */; };
@@ -69,6 +78,16 @@
 /* Begin PBXFileReference section */
 		0F8621402B6AD20D003FE29C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0F86216F2B6B6C89003FE29C /* LandingPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPage.swift; sourceTree = "<group>"; };
+		0F8621772B6B737C003FE29C /* Condiment-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Condiment-Regular.ttf"; sourceTree = "<group>"; };
+		0F8621782B6B737E003FE29C /* HoltwoodOneSC-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "HoltwoodOneSC-Regular.ttf"; sourceTree = "<group>"; };
+		0F8621792B6B7380003FE29C /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
+		0F86217E2B6B7482003FE29C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0F86217F2B6B7637003FE29C /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		0F8621812B6B7651003FE29C /* StartSplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartSplashScreen.swift; sourceTree = "<group>"; };
+		0F8621832B6B7678003FE29C /* Screen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen1.swift; sourceTree = "<group>"; };
+		0F8621852B6B76A0003FE29C /* Screen2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen2.swift; sourceTree = "<group>"; };
+		0F8621872B6B76BF003FE29C /* Screen3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen3.swift; sourceTree = "<group>"; };
+		0F8621892B6B76DA003FE29C /* Screen4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen4.swift; sourceTree = "<group>"; };
 		0FD296942B68AFAB004C7055 /* BeatOven.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeatOven.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FD296972B68AFAB004C7055 /* BeatOvenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeatOvenApp.swift; sourceTree = "<group>"; };
 		0FD296992B68AFAB004C7055 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,9 +156,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F8621712B6B703D003FE29C /* SplashScreens */ = {
+			isa = PBXGroup;
+			children = (
+				0F86217F2B6B7637003FE29C /* SplashScreenView.swift */,
+				0F8621812B6B7651003FE29C /* StartSplashScreen.swift */,
+				0F8621832B6B7678003FE29C /* Screen1.swift */,
+				0F8621852B6B76A0003FE29C /* Screen2.swift */,
+				0F8621872B6B76BF003FE29C /* Screen3.swift */,
+				0F8621892B6B76DA003FE29C /* Screen4.swift */,
+			);
+			path = SplashScreens;
+			sourceTree = "<group>";
+		};
+		0F86217A2B6B73A1003FE29C /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0F8621792B6B7380003FE29C /* SFPRODISPLAYBOLD.OTF */,
+				0F8621782B6B737E003FE29C /* HoltwoodOneSC-Regular.ttf */,
+				0F8621772B6B737C003FE29C /* Condiment-Regular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		0FD2968B2B68AFAB004C7055 = {
 			isa = PBXGroup;
 			children = (
+				0F86217A2B6B73A1003FE29C /* Fonts */,
+				0F8621712B6B703D003FE29C /* SplashScreens */,
 				0F8621402B6AD20D003FE29C /* GoogleService-Info.plist */,
 				0FD296EF2B68BBB7004C7055 /* LoginPages */,
 				0FD296D82B68B8DF004C7055 /* FromTabScreens */,
@@ -164,6 +208,7 @@
 		0FD296962B68AFAB004C7055 /* BeatOven */ = {
 			isa = PBXGroup;
 			children = (
+				0F86217E2B6B7482003FE29C /* Info.plist */,
 				0FD296972B68AFAB004C7055 /* BeatOvenApp.swift */,
 				0FD296992B68AFAB004C7055 /* ContentView.swift */,
 				0F86216F2B6B6C89003FE29C /* LandingPage.swift */,
@@ -359,6 +404,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F86217B2B6B7436003FE29C /* SFPRODISPLAYBOLD.OTF in Resources */,
+				0F86217D2B6B743E003FE29C /* Condiment-Regular.ttf in Resources */,
+				0F86217C2B6B743B003FE29C /* HoltwoodOneSC-Regular.ttf in Resources */,
 				0FD2969F2B68AFAC004C7055 /* Preview Assets.xcassets in Resources */,
 				0FD2969C2B68AFAC004C7055 /* Assets.xcassets in Resources */,
 				0F8621412B6AD20D003FE29C /* GoogleService-Info.plist in Resources */,
@@ -387,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FD296EA2B68BACE004C7055 /* SocialMediaAddView.swift in Sources */,
+				0F8621802B6B7637003FE29C /* SplashScreenView.swift in Sources */,
 				0FD2969A2B68AFAB004C7055 /* ContentView.swift in Sources */,
 				0FD296E42B68BA3D004C7055 /* VoiceTrackAddView.swift in Sources */,
 				0FD296E02B68B9D9004C7055 /* UploadSoundtrackView.swift in Sources */,
@@ -394,19 +443,24 @@
 				0FD296F32B68BC13004C7055 /* SignUpView.swift in Sources */,
 				0FD296EE2B68BB1A004C7055 /* DMPersonalView.swift in Sources */,
 				0FD296C32B68B104004C7055 /* CustomTabBar.swift in Sources */,
+				0F8621822B6B7651003FE29C /* StartSplashScreen.swift in Sources */,
 				0FD296CF2B68B4B7004C7055 /* ProfilePage2.swift in Sources */,
 				0FD296F12B68BBDE004C7055 /* LoginView.swift in Sources */,
 				0FD296DC2B68B998004C7055 /* PortfolioCreatorView.swift in Sources */,
+				0F8621842B6B7678003FE29C /* Screen1.swift in Sources */,
 				0FD296F52B68BC98004C7055 /* FullSignUpView.swift in Sources */,
 				0FD296E62B68BA69004C7055 /* IntrotextEditorView.swift in Sources */,
 				0FD296C72B68B278004C7055 /* DiscoverView.swift in Sources */,
 				0FD296C92B68B312004C7055 /* HomeView.swift in Sources */,
 				0FD296E22B68BA18004C7055 /* PortfolioEditorView.swift in Sources */,
 				0FD296C52B68B1EC004C7055 /* ProfilePage.swift in Sources */,
+				0F86218A2B6B76DA003FE29C /* Screen4.swift in Sources */,
 				0FD296DA2B68B958004C7055 /* PortfolioView.swift in Sources */,
+				0F8621882B6B76BF003FE29C /* Screen3.swift in Sources */,
 				0FD296EC2B68BAF2004C7055 /* GroupChatView.swift in Sources */,
 				0FD296D52B68B80D004C7055 /* TrackLibView.swift in Sources */,
 				0FD296CB2B68B376004C7055 /* ColabView.swift in Sources */,
+				0F8621862B6B76A0003FE29C /* Screen2.swift in Sources */,
 				0F8621702B6B6C8A003FE29C /* LandingPage.swift in Sources */,
 				0FD296E82B68BA9D004C7055 /* NotableWorksAddView.swift in Sources */,
 				0FD296982B68AFAB004C7055 /* BeatOvenApp.swift in Sources */,
@@ -577,6 +631,7 @@
 				DEVELOPMENT_TEAM = RHL26U4H7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatOven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -606,6 +661,7 @@
 				DEVELOPMENT_TEAM = RHL26U4H7P;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BeatOven/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
