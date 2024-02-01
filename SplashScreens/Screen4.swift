@@ -115,7 +115,7 @@ struct Screen4: View {
                         Spacer() // Center the indicators horizontally
                     }
                     .padding(.bottom, 90)
-                    NavigationLink(destination: LandingPage().navigationBarBackButtonHidden(), isActive: $isActive) {
+                    NavigationLink(destination: LandingPage().navigationBarBackButtonHidden(true), isActive: $isActive) {
                         EmptyView()
                     }
                     Button(action: {

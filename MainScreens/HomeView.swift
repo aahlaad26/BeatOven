@@ -600,10 +600,15 @@ struct HomeView: View {
                                             .resizable()
                                             .frame(width: 270, height: 261)
                                             .cornerRadius(20)
-                                        Image(systemName: "person.fill")
-                                            .resizable()
-                                            .frame(width: 40, height: 40)
-                                            .foregroundColor(.black)
+                                        NavigationLink(destination: LoginView().navigationBarBackButtonHidden(true)) {
+                                            Image(systemName: "person.fill")
+                                                .resizable()
+                                                .frame(width: 40, height: 40)
+                                                .foregroundColor(.black)
+                                                                    
+                                                                    
+                                                                    }
+                                        
                                             .offset(x:-100,y:100)
                                     }.padding(.bottom,20)
                                     Text("“If you can't say it word for word, music is the alternative rescue.”")
