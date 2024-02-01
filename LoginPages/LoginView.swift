@@ -18,7 +18,7 @@ struct LoginView: View {
     @State private var email: String = ""
     @State private var password: String = ""
     @State private var isPasswordVisible: Bool = false
-    
+    @State private var isActive = false
     var body: some View {
         NavigationView {
             ZStack {
@@ -114,7 +114,9 @@ struct LoginView: View {
                             .frame(maxWidth: .infinity, alignment: .trailing) // Align to the right
                             .padding(.top, -55)
                             .padding(.trailing, 16)
-                        
+                        NavigationLink(destination: HomeView().navigationBarBackButtonHidden(true), isActive: $isActive) {
+                            EmptyView()
+                        }
                         Button(action: {
                             if !email.isEmpty,!password.isEmpty{
                                 Auth.auth().signIn(withEmail: email, password: password){
@@ -124,6 +126,7 @@ struct LoginView: View {
                                     }
                                     else{
                                         print("login sucessful")
+                                        isActive = true
                                     }
                                 }
                                 
