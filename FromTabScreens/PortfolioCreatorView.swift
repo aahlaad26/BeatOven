@@ -26,7 +26,7 @@ struct PortfolioCreatorView: View {
                             Text("Back")
                                 .foregroundColor(.black)
                         }
-                        .offset(x:-160,y:-380)
+                        .offset(x:-160,y:-365)
                         Text("Portfolio Creator")
                           .font(
                             Font.custom("Poppins", size: 20)

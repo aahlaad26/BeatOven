@@ -23,7 +23,7 @@ struct UploadSoundtrackView: View {
                             Text("Back")
                                 .foregroundColor(.black)
                         }
-                        .offset(x:-160,y:-380)
+                        .offset(x:-160,y:-360)
                         
                         Text("Upload Soundtracks ")
                             .font(

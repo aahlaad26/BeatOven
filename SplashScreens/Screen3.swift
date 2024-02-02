@@ -105,7 +105,7 @@ struct Screen3: View {
                 .padding()
                 .position(x: 195, y: 190)
 
-                NavigationLink(destination: Screen4(), isActive: $isActive) {
+                NavigationLink(destination: Screen4().navigationBarBackButtonHidden(true), isActive: $isActive) {
                     EmptyView()
                 }
                 .hidden()

@@ -17,12 +17,25 @@ import SwiftUI
 struct CollabrequestView: View {
     @State private var groupName: String = ""
     @State private var groupDescription: String = ""
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     var body: some View {
         NavigationView() {
             ZStack(){
                 Color(red: 0.99, green: 0.87, blue: 0.82)
                 ScrollView{
+                    
                     ZStack{
+                        Button(action: {
+                            self.presentationMode.wrappedValue.dismiss()
+                        }) {HStack{
+                            Image(systemName: "back-arrow")
+                                .foregroundColor(.black)
+                            Text("Back")
+                                .foregroundColor(.black)
+                        }
+                            
+                        }
+                        .offset(x:-160,y:-360)
                         Text("Create New Group")
                             .font(
                                 Font.custom("Poppins", size: 22)
@@ -211,7 +224,7 @@ struct CollabrequestView: View {
                               
                         }.offset(x:4,y:320)
                         
-                    }.offset(y:120)
+                    }.offset(y:170)
                     
                 }
                 

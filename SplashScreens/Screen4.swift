@@ -34,7 +34,7 @@ struct Screen4: View {
 
                     Spacer()
 
-                    Text("Your music deserves to be heard\nBuild Your Portfolio Now !")
+                    Text("Your music deserves to be heard\nBuild Your Portfolio Now!")
                         .font(Font.custom("SF Pro Display", size: 31))
                         .frame(width: 344, height: 193, alignment: .topLeading)
                         .opacity(fadeIn ? 1.0 : 0.0) // Fade-in animation
