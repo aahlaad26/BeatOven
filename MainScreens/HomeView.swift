@@ -45,7 +45,7 @@ struct HomeView: View {
                     // Content View for each tab
                    
                         ScrollViewOne()
-                            .padding(.bottom,20)
+                            
                         ScrollViewTwo()
                     
                         
@@ -142,7 +142,7 @@ struct ScrollViewOne: View {
     var body: some View {
         ScrollView() {
             VStack(alignment: .leading) {
-                    Text("Posts")
+                    Text("Feed")
                     .font(.system(size: 24))
                       .fontWeight(.bold)
                       .multilineTextAlignment(.leading)
@@ -182,6 +182,71 @@ struct ScrollViewOne: View {
                         .frame(width: 370,height: 350)
                         .padding([.top,.bottom],0)
                         .padding()
+                        VStack{HStack(spacing: 30){
+                            Image("post-prof") // Replace "your_image_name" with the actual name of your image asset
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 32, height: 32)// Adjust the frame size as needed
+                            
+                                .clipShape(Ellipse())
+                            VStack(alignment: .leading){
+                                Text("feelmybicep")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.black)
+                                Text("Electronic|Breakbeat")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.black)
+                            }
+                            Text("2 hours ago")
+                                .font(.system(size: 12))
+                            
+                        }
+                            Image("post-1")
+                                .foregroundColor(.clear)
+                                .frame(width: 298.41, height: 275.58)
+                                .cornerRadius(19.54)
+                                .padding()
+                            
+                            
+                        }.cornerRadius(10)
+                        .padding()
+                        .background(Color(red: 1, green: 0.79, blue: 0.7))
+                        .frame(width: 370,height: 350)
+                        .padding([.top,.bottom],0)
+                        .padding()
+                        VStack{HStack(spacing: 30){
+                            Image("post-prof") // Replace "your_image_name" with the actual name of your image asset
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .frame(width: 32, height: 32)// Adjust the frame size as needed
+                            
+                                .clipShape(Ellipse())
+                            VStack(alignment: .leading){
+                                Text("feelmybicep")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.black)
+                                Text("Electronic|Breakbeat")
+                                    .font(.system(size: 14))
+                                    .foregroundColor(.black)
+                            }
+                            Text("2 hours ago")
+                                .font(.system(size: 12))
+                            
+                        }
+                            Image("post-1")
+                                .foregroundColor(.clear)
+                                .frame(width: 298.41, height: 275.58)
+                                .cornerRadius(19.54)
+                                .padding()
+                            
+                            
+                        }.cornerRadius(10)
+                        .padding()
+                        .background(Color(red: 1, green: 0.79, blue: 0.7))
+                        .frame(width: 370,height: 350)
+                        .padding([.top,.bottom],0)
+                        .padding()
+                        
                         
                     }
                 }
@@ -310,7 +375,7 @@ struct ScrollViewTwo: View {
             }
         }
         VStack(alignment: .leading){
-            Text("Profiles").font(.system(size: 24, weight: .bold)).foregroundColor(Color(#colorLiteral(red: 0.92, green: 0.3, blue: 0.26, alpha: 1))).multilineTextAlignment(.center)
+            Text("Find Artists").font(.system(size: 24, weight: .bold)).foregroundColor(Color(#colorLiteral(red: 0.92, green: 0.3, blue: 0.26, alpha: 1))).multilineTextAlignment(.center)
                 .padding(.bottom,20)
                 .padding(.leading,20)
             ScrollView(.horizontal, showsIndicators: false) {
@@ -473,11 +538,109 @@ struct ScrollViewTwo: View {
                 .padding()
                    
                 }
-                 
+
                 
                 
                 
                 
+            }
+            VStack(alignment: .leading){
+                Text("Popular Portfolios").font(.system(size: 24, weight: .bold)).foregroundColor(Color(#colorLiteral(red: 0.92, green: 0.3, blue: 0.26, alpha: 1))).multilineTextAlignment(.center)
+                    .padding(.bottom,20)
+                    .padding(.leading,20)
+                ScrollView(.horizontal) {
+                    
+                    HStack{
+                        HStack{
+                            VStack(alignment: .center){
+                                Text("Rohini")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.semibold)
+                                    .lineSpacing(17)
+                                    .foregroundColor(.white)
+                                ZStack{
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 270, height: 261)
+                                        .cornerRadius(20)
+                                    Image(systemName: "person.fill")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(.black)
+                                        .offset(x:-100,y:100)
+                                }.padding(.bottom,20)
+                                Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                    .font(.system(size: 16))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                            }.foregroundColor(.clear)
+                                .frame(width: 374, height: 429)
+                                .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                .cornerRadius(20)
+                                
+                             
+                        }.padding()
+                        HStack{
+                            VStack(alignment: .center){
+                                Text("Rohini")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.semibold)
+                                    .lineSpacing(17)
+                                    .foregroundColor(.white)
+                                ZStack{
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 270, height: 261)
+                                        .cornerRadius(20)
+                                    Image(systemName: "person.fill")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(.black)
+                                        .offset(x:-100,y:100)
+                                }.padding(.bottom,20)
+                                Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                    .font(.system(size: 16))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                            }.foregroundColor(.clear)
+                                .frame(width: 374, height: 429)
+                                .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                .cornerRadius(20)
+                                
+                             
+                        }.padding()
+                        HStack{
+                            VStack(alignment: .center){
+                                Text("Rohini")
+                                    .font(.system(size: 20))
+                                    .fontWeight(.semibold)
+                                    .lineSpacing(17)
+                                    .foregroundColor(.white)
+                                ZStack{
+                                    Image("Portfo")
+                                        .resizable()
+                                        .frame(width: 270, height: 261)
+                                        .cornerRadius(20)
+                                    Image(systemName: "person.fill")
+                                        .resizable()
+                                        .frame(width: 40, height: 40)
+                                        .foregroundColor(.black)
+                                        .offset(x:-100,y:100)
+                                }.padding(.bottom,20)
+                                Text("“If you can't say it word for word, music is the alternative rescue.”")
+                                    .font(.system(size: 16))
+                                    .multilineTextAlignment(.center)
+                                    .foregroundColor(.white)
+                            }.foregroundColor(.clear)
+                                .frame(width: 374, height: 429)
+                                .background(Color(red: 0.37, green: 0.16, blue: 0.12))
+                                .cornerRadius(20)
+                                
+                             
+                        }.padding()
+                        
+                    }
+                }
             }
         }
         .padding(.bottom,100)
@@ -486,8 +649,8 @@ struct ScrollViewTwo: View {
 
 struct ScrollViewThree: View {
     var body: some View {
-        ScrollView {
-            VStack(alignment: .center){
+        ScrollView() {
+            HStack(alignment: .center){
                 Text("Popular Porfolios")
                 .font(.system(size: 40))
                   .fontWeight(.bold)
